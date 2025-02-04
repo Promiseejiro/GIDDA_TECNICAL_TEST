@@ -35,11 +35,6 @@ Runs the app in development mode.\
 Open your browser to view the application.\
 The page will reload automatically when you make changes.
 
-### `npm run build`
-
-Builds the app for production to the `dist` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
 ### `npm run preview`
 
 Locally preview the production build.
