@@ -31,7 +31,7 @@ const DashboardHeader = () => {
   return (
     <div className="flex items-center gap-6 justify-between w-full ">
       <div className="flex items-center gap-8 ">
-        <div className="flex items-center gap-3">
+        <div className=" hidden lg:flex  items-center gap-3">
           <button className="bg-gray rounded-[5px]  w-5 h-5 flex items-center justify-center">
             <img src={leftIcon} />
           </button>
