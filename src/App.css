@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+@font-face {
+  font-family: 'milky';
+  src: url('/public/fonts/Millik.otf') format('otf'),
+       url('../public/fonts/Millik.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+ font-family: "Red Hat Display", serif;
+}

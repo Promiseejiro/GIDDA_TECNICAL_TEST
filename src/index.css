@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family: "Millik";
+  src: url("../public/fonts/Millik.ttf") format("truetype"); /* If in public folder */
+}
+ 
+ 
+
+:root {
+font-family: "Red Hat Display", serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
