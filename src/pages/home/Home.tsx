@@ -98,9 +98,9 @@ export const Home = () => {
   ];
 
   return (
-    <main className="my-20 overflow-hidden">
-      <div className="flex flex-col items-center justify-center gap-9 my-9 max-w-[819px] mx-auto px-8 relative">
-        <div className="fixed right-2 bottom-2 lg:absolute  lg:top-[-2.5rem] lg:right-[-15rem] z-40">
+    <main className="my-16 overflow-hidden">
+      <div className="flex flex-col items-center justify-center gap-9 my-12 max-w-[819px] mx-auto px-8 relative">
+        <div className="fixed right-2 bottom-2 lg:absolute  lg:top-[-3rem] lg:right-[-15rem] z-40">
           <TopAbsoluteContainer />
         </div>
         <div className="bg-gradient-to-r from-[#FFFFFB] via-[#F6FDF4] to-[#FFEDCB] flex items-center justify-center px-4 py-4 rounded gap-4 border-grayBorder border-solid border">

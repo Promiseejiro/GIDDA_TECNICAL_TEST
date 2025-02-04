@@ -7,8 +7,9 @@ import { Bell, ChevronDown, ChevronRight, MoveLeft } from "lucide-react";
 import VideoIcon from "../assets/svg/playIcon.svg";
 import houseIcon from "../assets/svg/houses.svg";
 import logo from "../assets/svg/Logo.svg";
-import { FC } from "react";
+import { FC, useEffect } from "react";
 import { IoMdArrowDropdown } from "react-icons/io";
+import { getLocalUser } from "../utils.ts/sesstions";
 
 interface UnitProps {
   text: string;
@@ -27,8 +28,6 @@ const Units: FC<UnitProps> = ({ text, icon }) => {
 };
 
 const DashboardHeader = () => {
-  const navigate = useNavigate();
-
   return (
     <div className="flex items-center gap-6 justify-between w-full ">
       <div className="flex items-center gap-8 ">
@@ -120,6 +119,13 @@ export const ProtectedLayout = () => {
     { text: "5 ESTATES", icon: houseIcon, unit: "" },
     { text: "5 ESTATES", icon: houseIcon, unit: "7 unit" },
   ];
+
+  useEffect(() => {
+    const authenticated = getLocalUser();
+    if (!authenticated) {
+      navigate("/");
+    }
+  }, []);
   return (
     <main className="flex">
       <div className="w-[233px] bg-primary ">
