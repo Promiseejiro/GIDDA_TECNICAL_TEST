@@ -41,7 +41,7 @@ const DashboardHeader = () => {
         </div>
         <h3 className="font-bold ">My Properties</h3>
       </div>
-      <div className="lg:w-[374px]">
+      <div className="w-[200px] lg:w-[374px]">
         <CustomInput
           usecase={"search"}
           onChange={() => {}}
@@ -51,7 +51,7 @@ const DashboardHeader = () => {
           size="sm"
         />
       </div>
-      <div>
+      <div className="hidden lg:block">
         <div className="flex gap-6 items-center">
           <div className="w-[141px] mr-2">
             <Dropdown
@@ -128,7 +128,7 @@ export const ProtectedLayout = () => {
   }, []);
   return (
     <main className="flex">
-      <div className="w-[233px] bg-primary ">
+      <div className="w-[233px] bg-primary hidden lg:block">
         <div className="flex flex-col gap-4 border-solid border-b-[1px] border-deepGray p-6">
           <div>
             <img src={logo} />
@@ -141,7 +141,7 @@ export const ProtectedLayout = () => {
       </div>
 
       {/* Dashboard Layout */}
-      <div className=" py-[10px] w-full ">
+      <div className=" py-[10px] w-full">
         {location.pathname === "/create" ? (
           <div className="mx-[40px]">
             <div className="w-full flex items-center gap-4 ">

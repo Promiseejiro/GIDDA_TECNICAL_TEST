@@ -78,7 +78,7 @@ export const Properties = () => {
       ) : (
         <div className="py-4 px-[40px]">
           <SectionHeader title="Estates - 5" btnText="Create Estate" />
-          <div className="grid grid-cols-3 gap-4 mt-8">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-8">
             {estateProperties.map((estate) => (
               <EstateCard
                 key={estate.id}
