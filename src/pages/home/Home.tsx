@@ -12,6 +12,7 @@ import rectangle6 from "../../assets/images/Rectangle6.png";
 import {
   Partners,
   PeopleTalkSession,
+  ProgressBar,
   SectionBorder,
   SectionHeader,
   ServiceCard,
@@ -281,7 +282,14 @@ export const Home = () => {
           />
           <div className="flex gap-4 max-w-[1187px] mx-auto overflow-x-scroll-scroll justify-center mb-8"></div>
           <div className="rounded-3xl overflow-hidden max-w-[1187px] mx-auto">
-            <VideoContainer height="585px" />
+            <div className="flex items-start gap-12">
+              <div className="rounded-[40px] overflow-hidden border-solid border-primary border-[2px]">
+                <VideoContainer height="585px" />
+              </div>
+              <div>
+                <ProgressBar />
+              </div>
+            </div>
           </div>
         </div>
       </SectionBorder>

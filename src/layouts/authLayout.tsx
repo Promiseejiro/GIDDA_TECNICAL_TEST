@@ -54,7 +54,7 @@ export const AuthLayout: FC = () => {
           src={grouphouse}
           alt="grouped"
           width={"95%"}
-          className="absolute bottom-0 left-2"
+          className="absolute bottom-0 left-2 z-[-10]"
         />
       </div>
     </main>

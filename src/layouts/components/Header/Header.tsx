@@ -15,9 +15,9 @@ export const Header = () => {
   ];
 
   return (
-    <header className="h-[81px] flex items-center justify-between w-full max-w-[1326px] mx-4 lg:mx-auto">
+    <header className="h-[81px] flex items-center justify-between w-full max-w-[1326px] mx-4 lg:mx-auto gap-4">
       <img src={logo} />
-      <div className="hidden lg:flex items-center justify-center">
+      <div className="hidden lg:flex items-center justify-center w-[189px]">
         <CustomInput
           usecase={"search"}
           onChange={() => {}}
@@ -48,10 +48,10 @@ export const Header = () => {
         ))}
       </div>
       <div className=" hidden lg:flex items-center gap-6">
-        <div className="border-solid border-l border-r border-grayBorder flex items-center justify-center text-primary px-8 py-1 font-medium">
+        <div className="border-solid border-l border-r border-grayBorder flex items-center justify-center text-primary px-8 py-1 font-medium text-xs">
           Refer & Earn
         </div>
-        <div className=" w-[90px]">
+        <div className="w-[90px]">
           <div className="hidden lg:flex items-center justify-center">
             <Dropdown
               readOnly
